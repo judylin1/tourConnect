@@ -19,11 +19,7 @@ function stringify(input) {
       var keyString = '"' + keys[i] + '":';
       // extract value
       var value = input[keys[i]];
-      if (typeof(value) === "string") {
-        keyString = keyString + '"' + value + '"';
-      } else {
-        keyString = keyString + stringify(value);
-      }
+      typeof(value) === "string" ? keyString = keyString + '"' + value + '"' : keyString = keyString + stringify(value)
       array.push(keyString);
     }
     return "{" + array.join(",") + "}";
