@@ -7,4 +7,6 @@ Implement a function called stringify that emulates JSON.stringify. If you wante
 ##### Solution:
 The solution can be found in the file named, 'stringify.js'. TDD done with Jasmine.  
 To run test:
->> jasmine
+> jasmine  
+
+Time to complete: 1 hour total.
